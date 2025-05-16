@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card UI Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- boxicon css -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Playwrite IN", serif;
+    font-optical-sizing: auto;
+}
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        .profile-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 370px;
+            width: 100%;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 24px;
+            padding: 25px;
+            position: relative;
+        }
+        .profile-card::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 36%;
+            width: 100%;
+            background-color: #4070f4;
+            border-radius: 24px 24px 0 0;
+        }
+        /* .profile-card::before (Decorative Header)
+This adds an extra design element inside the card, before any real content.
+It creates an empty invisible box (content: "").
+This box is placed at the top-left corner (top: 0; left: 0).
+It covers 36% of the card's height and full width (width: 100%).
+It has a blue background (background-color: #4070f4), creating a header effect.
+The top corners are rounded (border-radius: 24px 24px 0 0), matching the card's style. */
+        .image{
+            position: relative;
+            height: 150px;
+            width: 150px;
+            background-color: #4070f4;
+            padding: 3px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .image .profile-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+
+        .profile-card .text-data{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            color: #333;
+        }
+        .text-data .name{
+            font-weight: 500;
+            font-size: 22px;
+        }
+        .text-data .job{
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .profile-card .media-button{
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .media-button .link{
+            background-color: #4070f4;
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            margin: 0px 8px;
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-card .buttons{
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+        }
+        .buttons .butt{
+            color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0px 10px;
+            border: none;
+            border-radius: 24px;
+            background-color: #4070f4;
+            padding: 8px 24px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        .buttons .butt:hover{
+            background-color: #0e4bf1;
+        }
+
+        .profile-card .analytics
+        {
+            display: flex;
+            margin-top: 25px;
+            align-items: center;
+        }
+        .analytics .data{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            color: #333;
+            padding: 0px 20px;
+            border-right: 2px solid #e7e7e7;
+            font-size: 14px;
+        }
+        .data:last-child{
+            border: none;
+        }
+        .data i{
+            font-size: 24px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="image">
+            <img src="profile1.jpg" alt="" class="profile-img">
+        </div>
+
+        <div class="text-data">
+            <span class="name">Code Hunter</span>
+            <span class="job">Software Developer</span>
+        </div>
+
+        <div class="media-button">
+            <a href="#" style="background-color: #4267b2;" class="link">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="#" style="background-color: #e1306c;" class="link">
+                <i class='bx bxl-instagram' ></i>
+            </a>
+            <a href="#" style="background-color: #1da1f2;" class="link">
+                <i class='bx bxl-twitter' ></i>
+            </a>
+            <a href="#" style="background-color: #0A66C2;" class="link">
+                <i class='bx bxl-linkedin' ></i>
+            </a>
+        </div>
+
+        <div class="buttons">
+            <button class="butt">Follow</button>
+            <button class="butt">Message</button>
+        </div>
+
+        <div class="analytics">
+            <div class="data">
+                <i class='bx bx-heart'></i>
+                <span class="number">60K</span>
+            </div>
+
+            <div class="data">
+                <i class='bx bx-message-rounded-dots' ></i>
+                <span class="number">30K</span>
+            </div>
+
+            <div class="data">
+                <i class='bx bx-share' ></i>
+                <span class="number">60K</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
