@@ -1,52 +1,53 @@
-# 🎨 CSS Projects Collection
+# 🎨 CSS Mini Projects
 
-This repository contains a set of frontend mini-projects built using **HTML** and **CSS**. These projects are created purely for learning and practice purposes — no frameworks or libraries used.
+This repository contains a collection of frontend mini-projects built using **HTML** and **CSS**. Each project is created from scratch as part of my learning journey to improve layout design, styling skills, and responsive web development.
 
 ---
 
 ## 📁 Projects Included
 
-1. **💳 Project-1: Mastercard UI Design**
-   - A frontend layout inspired by a Mastercard credit card.
-   - Focus: card-style design, box shadows, gradients, and neat alignment.
+1. **💳 Project-1: Mastercard UI Design**  
+   A frontend layout inspired by a Mastercard credit card.  
+   🔗 [Live Demo](https://thecode-hunter.github.io/CSS-Mini-Projects/Project-1/)
 
-2. **🌐 Project-2: Basic Web Page Design**
-   - A simple and clean webpage layout.
-   - Focus: layout practice using flexbox and styling of common web sections.
+2. **🌐 Project-2: Basic Web Page Design**  
+   A simple and clean homepage-style layout.  
+   🔗 [Live Demo](https://thecode-hunter.github.io/CSS-Mini-Projects/Project-2/)
 
-3. **📬 Project-3: Contact Form with Address Info**
-   - A contact page design with a message form on the right and address, phone, email details on the left.
-   - Focus: form UI, layout design using flexbox, and icon placement.
+3. **📬 Project-3: Contact Form with Address Info**  
+   A contact page design with a message form on the right and address/phone/email info on the left.  
+   🔗 [Live Demo](https://thecode-hunter.github.io/CSS-Mini-Projects/Project-3/)
 
-4. **🛒 amazon-clone**
-   - A static clone of the Amazon homepage created using HTML and CSS only.
-   - Focus: layout structure, header/navigation styling, and page sectioning.
+4. **🛒 amazon-clone: Amazon Homepage Clone (Frontend Only)**  
+   A static clone of the Amazon homepage using HTML and CSS.  
+   🔗 [Live Demo](https://thecode-hunter.github.io/CSS-Mini-Projects/amazon-clone/amazon.html)
 
 ---
 
 ## 🛠️ Tech Stack
 
 - HTML5
-- CSS3 (Flexbox, Grid, Shadows, Responsive Design)
+- CSS3
+- Flexbox, Grid, Box Shadows, Media Queries
 
 ---
 
 ## 📂 Folder Structure
 
 ```plaintext
-css-projects/
-├── Project-1/              # Mastercard UI
+CSS-Mini-Projects/
+├── Project-1/
 │   ├── index.html
 │   └── style.css
 │
-├── Project-2/              # Basic web page
+├── Project-2/
 │   ├── index.html
 │   └── style.css
 │
-├── Project-3/              # Contact form
+├── Project-3/
 │   ├── index.html
 │   └── style.css
 │
-└── amazon-clone/           # Amazon frontend clone
+└── amazon-clone/
     ├── amazon.html
     └── amazon.css
