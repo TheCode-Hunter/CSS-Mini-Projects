@@ -1,138 +1,125 @@
- @import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Playwrite IN", serif;
-    font-optical-sizing: auto;
-}
-        body{
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f4f4f4;
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: "Poppins", serif;
+            font-weight: 300;
+            font-style: normal;
         }
-        .profile-card{
+        body{
+            background-color: #d9e0e6;
+        }
+       /* black container */
+        .container{
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+            position: absolute;
+            top: 180px;
+            left: 450px;
+            height: 600px;
+            max-width: 1013px;
+            width: 100%;
+            background-color: black;
             display: flex;
             flex-direction: column;
             align-items: center;
-            max-width: 370px;
+            border-radius: 80px;
+        }
+
+        /* box-1 */
+        .box1{
+            margin-top: 20px;
             width: 100%;
-            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 24px;
-            padding: 25px;
-            position: relative;
+            height: 32%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
         }
-        .profile-card::before{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 36%;
-            width: 100%;
-            background-color: #4070f4;
-            border-radius: 24px 24px 0 0;
+        .img{
+            height: 80%;
+            width: 30%;;
         }
-        /* .profile-card::before (Decorative Header)
-This adds an extra design element inside the card, before any real content.
-It creates an empty invisible box (content: "").
-This box is placed at the top-left corner (top: 0; left: 0).
-It covers 36% of the card's height and full width (width: 100%).
-It has a blue background (background-color: #4070f4), creating a header effect.
-The top corners are rounded (border-radius: 24px 24px 0 0), matching the card's style. */
-        .image{
-            position: relative;
-            height: 150px;
-            width: 150px;
-            background-color: #4070f4;
-            padding: 3px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-        .image .profile-img{
+        .img .logo-img{
             height: 100%;
             width: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 3px solid #fff;
+        }
+        .chip{
+            height: 80%;
+            width: 30%;;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .chip .chip-img{
+            height: 50%;
+            width: 40%;
+            border-radius: 10px;
         }
 
-        .profile-card .text-data{
+        /* box-2 */
+        .box2{
+            margin-top: 80px;
+            height: 33%;
+            width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center;
-
-            color: #333;
-        }
-        .text-data .name{
-            font-weight: 500;
-            font-size: 22px;
-        }
-        .text-data .job{
-            font-weight: 400;
-            font-size: 15px;
-        }
-
-        .profile-card .media-button{
-            display: flex;
-            align-items: center;
-            margin-top: 15px;
-        }
-        .media-button .link{
-            background-color: #4070f4;
-            color: #fff;
-            font-size: 18px;
-            text-decoration: none;
-            margin: 0px 8px;
-            height: 34px;
-            width: 34px;
-            border-radius: 50%;
-            display: flex;
             justify-content: center;
-            align-items: center;
+        }
+        .card-num{
+            margin-left: 150px;
+            height: auto;
+            width: auto;
+        }
+        .number{
+            margin-left: 145px;
+            height: auto;
+            width: auto;
+        }
+        .card-num h4{
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        .number h2{
+            color: white;
+            font-size: 3rem;
+            font-weight: 500;
         }
 
-        .profile-card .buttons{
-            display: flex;
-            align-items: center;
-            margin-top: 25px;
-        }
-        .buttons .butt{
-            color: #fff;
-            font-size: 14px;
-            font-weight: 400;
-            margin: 0px 10px;
-            border: none;
-            border-radius: 24px;
-            background-color: #4070f4;
-            padding: 8px 24px;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-        }
-        .buttons .butt:hover{
-            background-color: #0e4bf1;
-        }
+        /* box-3 */
 
-        .profile-card .analytics
-        {
-            display: flex;
-            margin-top: 25px;
-            align-items: center;
-        }
-        .analytics .data{
-            cursor: pointer;
+        .box3{
+            margin-bottom: 10px;
+            height: 33%;
+            width: 100%;
             display: flex;
             align-items: center;
-            color: #333;
-            padding: 0px 20px;
-            border-right: 2px solid #e7e7e7;
-            font-size: 14px;
+            
         }
-        .data:last-child{
-            border: none;
+        .name{
+            margin-left: 145px;
+            height: auto;
+            width: auto;
         }
-        .data i{
-            font-size: 24px;
-            margin: 5px;
+        .info{
+            margin-left: 360px;
+            height: auto;
+            width: auto;
+        }
+        .name h3{
+            color: white;
+            font-size: 2rem;
+            font-weight: 500;
+            
+        }
+        .info h4{
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        .info h3{
+            color: white;
+            font-size: 2rem;
+            font-weight: 500;
         }
