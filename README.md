@@ -3,6 +3,7 @@
 This repository contains a collection of frontend mini-projects built using **HTML** and **CSS**. Each project is created from scratch as part of my learning journey to improve layout design, styling skills, and responsive web development.
 
 ⚠️ Note: The projects are not responsive and are best viewed on a desktop screen.
+
 ⚠️ These projects are made for learning purposes only.
 
 ---
